@@ -1,0 +1,137 @@
+#todo-container {
+  width: 100vw;
+  height: 100vh;
+  background: #2962D1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-container .todo-content {
+  background: #FFF;
+  width: 708px;
+  height: 700px;
+
+  border: 1px solid #D3E2E5;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todo-container .todo-content header {
+  width: 100%;
+  height: 100px;
+  margin-top: 40px;
+  font-size: 36px;
+  line-height: 34px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#todo-container .todo-content main {
+  width: 100%;
+}
+
+#todo-container .todo-content main .todo-block {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#todo-container .todo-content main .todo-block .btn-remover {
+  width: 64px;
+  height: 48px;
+
+  border-radius: 20px;
+  background: #C73737; 
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#todo-container .todo-content main .todo-block .btn-editar {
+  width: 64px;
+  height: 48px;
+
+  border-radius: 20px;
+  background: #2962D1; 
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#todo-container .todo-content main .todo-block .todo-checkbox{
+  width: 32px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 20px;
+  border: 1px solid #D3E2E5;
+
+  outline: none;
+  
+  background: #F5F8FA;
+  color: #5C8599;
+}
+
+#todo-container .todo-content main .todo-block .input-adicionar {
+  width: 332px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 20px;
+  border: 1px solid #D3E2E5;
+
+  outline: none;
+  
+  background: #F5F8FA;
+  color: #5C8599;
+}
+
+#todo-container .todo-content footer {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#todo-container .todo-content footer .btn-adicionar{
+  width: 155px;
+  height: 48px;
+  background: #37C77F;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 40px;
+
+  transition: background-color 0.2s;
+}
+
+#todo-container .todo-content footer .btn-adicionar:hover {
+  background: #3EE08F;
+}
+
+#todo-container .todo-content footer .input-adicionar {
+  width: 332px;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 20px;
+  border: 1px solid #D3E2E5;
+
+  outline: none;
+  
+  background: #F5F8FA;
+  color: #5C8599;
+}

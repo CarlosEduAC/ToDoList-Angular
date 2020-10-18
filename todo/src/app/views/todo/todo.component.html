@@ -1,0 +1,38 @@
+<div id="todo-container">
+  <div class="todo-content">
+    <header>Lista de Compras</header>
+
+    <main>
+      <div class="todo-block" *ngFor="let item of items">
+        <input class="todo-checkbox" type="checkbox" />
+        <div class="todo-title-container" >
+          <input class="input-adicionar" value={{item.name}} />
+        </div>
+
+        <div class="btn-group">
+          <button 
+            class="btn-remover" 
+            type="button"
+            (click)="removeToDo(item.name)"
+          ></button>
+          <!-- <button 
+            class="btn-editar" 
+            type="button"
+            (click)="editToDo()"
+          ></button> -->
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <input class="input-adicionar" [(ngModel)]="todo" />
+      <button 
+        class="btn-adicionar" 
+        type="button"
+        (click)="addToDo()"
+      >
+        Adicionar
+      </button>
+    </footer>
+  </div>
+</div>
